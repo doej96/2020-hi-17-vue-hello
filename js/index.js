@@ -12,13 +12,13 @@ new Vue({
     imgSrc: '../img/best1.jpg',
     imgIdx: 0,
   },
-  method: {
-    onBtnClick() {
+  methods: {
+    onBtnClick(e) {
       //this.boxShow = true; 
       this.boxShow = !this.boxShow; 
       //this: new Vue(객체)
     },
-    onImgClick() {
+    onImgClick(e) {
       this.imgIdx = (this.imgArr.length - 1 == this.imgIdx) ? 0 : this.imgIdx + 1;
       this.imgSrc = this.imgArr[this.imgIdx];
     }

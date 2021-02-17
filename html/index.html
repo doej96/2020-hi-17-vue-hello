@@ -13,6 +13,7 @@
 <body>
   <div id="app">
     <div class="container text-center">
+
       <h1 class="my-5 border text-center" v-show="title.length">{{ title }}</h1>
       <input type="text" class="form-control my-2" v-model="title">
 
@@ -26,7 +27,6 @@
       <div class="img-wrap">
         <img v-bind:src="imgSrc" alt="이미지">
       </div>
-
     </div>
   </div>
   <script type="module" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
